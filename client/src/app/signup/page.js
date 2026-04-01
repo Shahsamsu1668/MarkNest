@@ -117,9 +117,9 @@ export default function Signup() {
               <CardTitle className="text-3xl font-bold bg-gradient-to-r from-[#7657ff] to-[#322372] bg-clip-text text-transparent">
                 Create Account
               </CardTitle>
-              <CardDescription className="text-[#7657ff]/70">
+              {/* <CardDescription className="text-[#7657ff]/70">
                 Join our community and start your journey
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
 
             <CardContent className="space-y-5 pt-4">
@@ -150,7 +150,7 @@ export default function Signup() {
                     <Input
                       id="fullName"
                       type="text"
-                      placeholder="John Doe"
+                      placeholder="Enter Name"
                       className="pl-10 border-[#7657ff]/30 focus-visible:ring-[#7657ff] transition-all duration-300"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
@@ -397,21 +397,21 @@ export default function Signup() {
           </Card>
 
           <div className="mt-8 text-center text-sm text-gray-500">
-            <p>© 2025 Team X-OR. All rights reserved.</p>
+            <p>© 2025 All rights reserved.</p>
           </div>
         </div>
       </div>
 
       {/* Right side - Image with content */}
       <div className="hidden lg:flex flex-1 relative bg-[#322372] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#322372] via-[#7657ff]/80 to-[#322372] opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#ffff33] via-[#7657ff]/80 to-[#322372] opacity-80"></div>
 
         {/* Abstract shapes */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-white/5 rounded-full blur-2xl"></div>
 
         <img
-          src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="/images/IIT_Building.jpg"
           alt="Team Collaboration"
           className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
         />
@@ -422,16 +422,16 @@ export default function Signup() {
           }`}
         >
           <div className="max-w-md text-center">
-            <h2 className="text-5xl font-bold mb-6 leading-tight">
-              Start Your Journey Today
+            <h2 className="text-4xl text-white font-bold mb-6 leading-tight">
+              Create an account for better experience
             </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Join thousands of users who are already experiencing the power of
-              our platform.
+            <p className="text-.5xl text-white  mb-8">
+              Sign up to enjoy a smoother, more personalized experience. 
+              Unlock additional features and make the most of all available tools.
             </p>
 
             <div className="space-y-8 mt-12">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+              {/* <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src="https://randomuser.me/api/portraits/women/44.jpg"
@@ -448,9 +448,9 @@ export default function Signup() {
                   our projects. The intuitive interface and powerful features
                   have boosted our productivity by 40%. &quot;
                 </p>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center gap-3">
+              {/* <div className="flex flex-col items-center gap-3">
                 <p className="text-white/80 font-medium">
                   Trusted by leading companies worldwide
                 </p>
@@ -459,7 +459,7 @@ export default function Signup() {
                   <div className="bg-white/20 h-8 w-20 rounded-md"></div>
                   <div className="bg-white/20 h-8 w-28 rounded-md"></div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

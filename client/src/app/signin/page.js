@@ -113,16 +113,16 @@ export default function SignIn() {
 
             <CardHeader className="space-y-1 text-center">
               <CardTitle className="text-3xl font-bold bg-gradient-to-r from-[#322372] to-[#7657ff] bg-clip-text text-transparent">
-                Welcome Back
+                Sign-in
               </CardTitle>
-              <CardDescription className="text-[#7657ff]/70">
+              {/* <CardDescription className="text-[#7657ff]/70">
                 We&apos;re excited to see you again
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
 
             <CardContent className="space-y-5 pt-4">
               {/* Google Sign In Button */}
-              <Button
+              {/* <Button
                 variant="outline"
                 className="w-full border-[#7657ff]/30 hover:bg-[#7657ff]/5 hover:border-[#7657ff]/50 transition-all duration-300 group relative overflow-hidden"
                 onClick={handleGoogleSignIn}
@@ -150,17 +150,17 @@ export default function SignIn() {
                   </svg>
                   Continue with Google
                 </div>
-              </Button>
+              </Button> */}
 
               <div className="relative">
-                <div className="absolute inset-0 flex items-center">
+                {/* <div className="absolute inset-0 flex items-center">
                   <Separator className="w-full" />
-                </div>
-                <div className="relative flex justify-center text-xs uppercase">
+                </div> */}
+                {/* <div className="relative flex justify-center text-xs uppercase">
                   <span className="bg-white px-2 text-muted-foreground">
                     Or continue with email
                   </span>
-                </div>
+                </div> */}
               </div>
 
               {/* Email/Password Form */}
@@ -330,7 +330,7 @@ export default function SignIn() {
           </Card>
 
           <div className="mt-8 text-center text-sm text-gray-500">
-            <p>© 2025 Team X-OR. All rights reserved.</p>
+            <p>© 2025 All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -344,7 +344,7 @@ export default function SignIn() {
         <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
 
         <img
-          src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="/images/lab.jpg"
           alt="Office"
           className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
         />
@@ -355,12 +355,15 @@ export default function SignIn() {
           }`}
         >
           <div className="max-w-md text-center">
-            <h2 className="text-5xl font-bold mb-6 leading-tight">
-              Transform Your Digital Experience
+            <h2 className="text-2xl font-bold mb-4 leading-tight">
+              <i>Smarter, Faster and Personalized.</i>
             </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Access your account to unlock powerful tools and resources
-              designed to elevate your business.
+            <h1 className="text-4xl font-bold mb-4 leading-tight">
+            Sign in to get started!!
+            </h1>
+            <p className="text-.9xl text-white/90 mb-8">
+             Get the tools you need to learn better and faster.
+             Discover personalized content made just for you.
             </p>
 
             <div className="space-y-6 mt-12">
@@ -369,7 +372,7 @@ export default function SignIn() {
                   <CheckCircle className="h-5 w-5 text-white" />
                 </div>
                 <p className="text-left text-lg">
-                  Streamlined workflow management
+                  Manage results quickly and easily
                 </p>
               </div>
 
@@ -378,7 +381,7 @@ export default function SignIn() {
                   <CheckCircle className="h-5 w-5 text-white" />
                 </div>
                 <p className="text-left text-lg">
-                  Advanced analytics and reporting
+                  Get clear reports to see how things are going
                 </p>
               </div>
 
@@ -387,7 +390,7 @@ export default function SignIn() {
                   <CheckCircle className="h-5 w-5 text-white" />
                 </div>
                 <p className="text-left text-lg">
-                  Seamless team collaboration tools
+                  Stay connected and get work done easily
                 </p>
               </div>
             </div>

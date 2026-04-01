@@ -1,3 +1,4 @@
+
 import xlsx from "xlsx";
 import prisma from "../db.js";
 export const uploadExcel = async (req, res) => {
@@ -15,18 +16,18 @@ export const uploadExcel = async (req, res) => {
 
     // Validate required headers
     const requiredHeaders = [
-      "student id",
-      "student name",
-      "course id",
-      "course title",
-      "t1",
-      "t2",
-      "t3",
-      "best 2 tutorial mark",
-      "assignment",
-      "attendance",
-      "total mark",
-      "comment",
+      "Student ID",
+      "Student Name",
+      "Course ID",
+      "Course Title",
+      "Tutorial-1",
+      "Tutorial-2",
+      "Tutorial-3",
+      "Best of two tutorials",
+      "Assignment",
+      "Attendence",
+      "Total Mark",
+      "Comment",
     ];
 
     const headers = Object.keys(data[0] || {}).map((h) => h.trim());
@@ -41,21 +42,22 @@ export const uploadExcel = async (req, res) => {
     // Process each row
     const results = await prisma.$transaction(
       data.map((row) => {
+        console.log(row["Course ID"]);
         return prisma.courseResult.create({
           data: {
-            studentId: Number(row["student id"]),
-            studentName: row["student name"],
-            courseId: row["course id"],
-            courseTitle: row["course title"],
-            t1: Number(row["t1"]),
-            t2: Number(row["t2"]),
-            t3: Number(row["t3"]),
-            t4: row["t4"] ? Number(row["t4"]) : null,
-            bestTwoTutorialMarks: Number(row["best 2 tutorial mark"]),
-            assignment: Number(row["assignment"]),
-            attendance: Number(row["attendance"]),
-            totalMark: Number(row["total mark"]),
-            comment: row["comment"],
+            studentId: Number(row["Student ID"]),
+            studentName: row["Student Name"],
+            courseId: row["Course ID"],
+            courseTitle: row["Course Title"],
+            t1: Number(row["Tutorial-1"]),
+            t2: Number(row["Tutorial-2"]),
+            t3: Number(row["Tutorial-3"]),
+            t4: row["Tutorial-4"] ? Number(row["Tutorial-4"]) : null,
+            bestTwoTutorialMarks: Number(row["Best of two tutorials"]),
+            assignment: Number(row["Assignment"]),
+            attendance: Number(row["Attendence"]),
+            totalMark: Number(row["Total Mark"]),
+            comment: row["Comment"],
             teacherId: teacherId,
           },
         });

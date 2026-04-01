@@ -86,7 +86,7 @@ export default function Adminsidebar() {
           className="flex items-center justify-center gap-3"
           variants={labelVariants}
         >
-          <img src="/images/Group.png" alt="Logo" className="h-8" />
+          <img src="/images/Group.png" alt="Logo" className="h-20" />
         </motion.div>
         <Button
           variant="ghost"

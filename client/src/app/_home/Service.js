@@ -48,9 +48,9 @@ export default function Service() {
           </div>
 
           {/* CTA Button */}
-          <button className="mt-12 px-8 py-3 bg-white text-occean font-bold rounded-lg hover:bg-white/90 transition-colors">
+          {/* <button className="mt-12 px-8 py-3 bg-white text-occean font-bold rounded-lg hover:bg-white/90 transition-colors">
             Try the System
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

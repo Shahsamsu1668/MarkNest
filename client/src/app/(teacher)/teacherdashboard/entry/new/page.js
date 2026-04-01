@@ -176,13 +176,13 @@ export default function NewDataPage() {
                         className="text-gray-900 font-medium flex items-center gap-2"
                       >
                         <BookOpen className="w-4 h-4 text-gray-500" />
-                        Course Name
+                        Course ID
                       </Label>
                       <Input
                         id="courseName"
                         name="courseName"
                         type="text"
-                        placeholder="e.g., Computer Science 101"
+                        placeholder="e.g., ICT-2201"
                         value={formData.courseName}
                         onChange={handleInputChange}
                         className="h-12 border-gray-300 focus:border-tertiary focus:ring-tertiary"
@@ -202,7 +202,7 @@ export default function NewDataPage() {
                         id="courseTitle"
                         name="courseTitle"
                         type="text"
-                        placeholder="e.g., Introduction to Programming"
+                        placeholder="e.g., Algorithm Analysis and Design"
                         value={formData.courseTitle}
                         onChange={handleInputChange}
                         className="h-12 border-gray-300 focus:border-tertiary focus:ring-tertiary"
@@ -343,7 +343,7 @@ export default function NewDataPage() {
             </Card>
 
             {/* Excel Template */}
-            <Card className="border border-gray-200 bg-white">
+            {/* <Card className="border border-gray-200 bg-white">
               <CardHeader className="border-b border-gray-200 bg-gray-50">
                 <CardTitle className="text-lg font-semibold text-gray-900">
                   Excel Template
@@ -363,10 +363,10 @@ export default function NewDataPage() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Upload History */}
-            <Card className="border border-gray-200 bg-white">
+            {/* <Card className="border border-gray-200 bg-white">
               <CardHeader className="border-b border-gray-200 bg-gray-50">
                 <CardTitle className="text-lg font-semibold text-gray-900">
                   Recent Uploads
@@ -380,7 +380,7 @@ export default function NewDataPage() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Help Section */}
             <Card className="border border-gray-200 bg-white">

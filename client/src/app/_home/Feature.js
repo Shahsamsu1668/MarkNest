@@ -44,7 +44,7 @@ export default function Feature() {
       icon: <Users className="h-6 w-6 text-white" />,
       title: "Course Selection",
       description:
-        "Teachers will choose the course and batch. Marks will be linked with selected info for all students.",
+        "Teachers will choose the course ID and course title. Marks will be linked with selected info for all students.",
     },
   ];
 

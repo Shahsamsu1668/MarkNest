@@ -1,3 +1,4 @@
+
 "use client";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -36,13 +37,14 @@ export default function EntryPage() {
       });
       if (response.ok) {
         const data = await response.json();
-
+        console.log(data);
         // Remove duplicates based on courseId
         const uniqueCourses = data.filter(
           (course, index, self) =>
-            index === self.findIndex((c) => c.courseId === course.courseId)
+            index ===
+            self.findIndex((c) => c.courseTitle === course.courseTitle)
         );
-
+        console.log(uniqueCourses);
         setCourses(uniqueCourses);
         setFilteredCourses(uniqueCourses);
       } else {
@@ -73,7 +75,6 @@ export default function EntryPage() {
   // Navigate to details page
   const handleViewDetails = (courseTitle) => {
     router.push(`/teacherdashboard/entry/${encodeURIComponent(courseTitle)}`);
-
   };
 
   useEffect(() => {
@@ -273,3 +274,4 @@ export default function EntryPage() {
     </div>
   );
 }
+

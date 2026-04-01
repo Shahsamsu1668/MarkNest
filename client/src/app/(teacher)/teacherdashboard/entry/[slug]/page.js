@@ -93,8 +93,8 @@ export default function DetailsPage() {
     } else {
       const filtered = data.filter(
         (item) =>
-          item.id.toLowerCase().includes(value.toLowerCase()) ||
-          item.comment.toLowerCase().includes(value.toLowerCase())
+          item.id.toLowerCase().includes(value.toLowerCase()) 
+          // || item.comment.toLowerCase().includes(value.toLowerCase())
       );
       setFilteredData(filtered);
     }
@@ -258,9 +258,9 @@ export default function DetailsPage() {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <Input
-                placeholder="Search by student ID or comments..."
+                placeholder="Search by student ID or name..."
                 value={searchTerm}
-                onChange={(e) => handleSearch(e.target.value)}
+                onChange={(n) => handleSearch(n.target.value)}
                 className="pl-10 h-12 border-gray-300 focus:border-tertiary focus:ring-tertiary"
               />
             </div>
@@ -310,36 +310,38 @@ export default function DetailsPage() {
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200">
                         Student Name
                       </TableHead>
+                      
 
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        T1
+                        Tutorial1 
+
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        T2
+                       Tutorial2 
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        T3
+                       Tutorial3
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        T4
+                        Tutorial4
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        Best 2 Tutorials
+                        Average(Best Two) 
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        Assignment
+                        Assignment(10)
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        Attendance
+                        Attendance(10)
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
-                        Total Mark
+                        Total Mark(40)
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200 text-center">
                         Grade
                       </TableHead>
                       <TableHead className="font-semibold text-gray-900 border-r border-gray-200">
-                        Comments
+                        Comment(Optional)
                       </TableHead>
                     </TableRow>
                   </TableHeader>

@@ -26,15 +26,17 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center mt-[4%]">
           <div>
             <h1 className="text-6xl mx-auto w-[90%] font-semibold leading-[4.2rem] text-[#322372] text-center">
-              Result <span className="text-tertiary">Management System</span>{" "}
+              IIT <span className="text-tertiary">MarkNest</span>{" "}
               for Academic Solutions
             </h1>
           </div>
           <div>
             <p className="text-[#5a5a5a] text-lg font-medium w-[65%] mx-auto text-center mt-7">
-              Easily manage results, sign-up as teacher or student, upload data
-              to database, access individual marksheets, and ensure smooth
-              result communication through a unified digital platform.
+              "Reimagine academic management: 
+              one platform to register as a teacher or student,
+               upload data effortlessly, access personalized marksheets,
+                and communicate results in real time — all in one smooth, 
+                smart ecosystem."
             </p>
           </div>
 
@@ -103,7 +105,7 @@ export default function Hero() {
               Sign In
             </Button>
             <Button
-              onClick={() => router.push("/signin")}
+              onClick={() => router.push("/signup")}
               className="rounded-lg px-10 border-tertiary bg-white border-[1.5px] text-tertiary hover:bg-white hover:text-tertiary"
             >
               Sign Up
@@ -114,7 +116,7 @@ export default function Hero() {
         <div className="mt-[7%]">
           <h1 className="text-[#322372] text-2xl font-semibold text-center">
             Recommended by{" "}
-            <span className="text-tertiary">leading institutes</span>
+            <span className="text-tertiary">Institute of Information Technology</span>
           </h1>
           <div className="flex py-10 justify-center space-x-[5%] items-center">
             <div className="flex items-center space-x-2 opacity-50">

@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import { MenuIcon } from "lucide-react";
+import { px } from "motion";
 export default function Header() {
   return (
     <header className="container font-mona  mx-auto flex h-20 w-full shrink-0 justify-between items-center px-4 md:px-6 ">
@@ -23,12 +24,12 @@ export default function Header() {
           <Link href="#" prefetch={false}>
             <Image
               src="/images/Group.png"
-              width={260}
-              height={200}
+              width={110}
+              height={110}
               alt="logo"
-              className="2xl:w-[400px]"
+              className="w-[70%] h-[70%]"
             />
-            <span className="sr-only">Company Logo</span>
+            <span className="sr-only">IIT Logo</span>
           </Link>
           <div className="grid gap-2 py-6 uppercase">
             <Link
@@ -64,7 +65,7 @@ export default function Header() {
       </Sheet>
       <div>
         <Link href="#" className="mr-6 hidden lg:flex  mt-1" prefetch={false}>
-          <Image src="/images/Group.png" width={40} height={40} alt="logo" />
+          <Image src="/images/Group.png" width={110} height={110} alt="logo" />
           <span className="sr-only">Company Logo</span>
         </Link>
       </div>
